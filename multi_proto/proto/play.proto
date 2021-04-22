@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package api;
+
+service PlaySvc {
+    rpc Play(PlayReq) returns (PlayRes){}
+}
+
+message PlayReq {
+    string Address = 1;
+    int64 Nums = 2;
+}
+
+message PlayRes {
+    int64 Code = 1;
+}

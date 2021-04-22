@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package api;
+
+service UploadSvc {
+    rpc Upload(UploadReq) returns (UploadRes){}
+}
+
+message UploadReq {
+    string Name = 1;
+}
+
+message UploadRes {
+    string Res = 1;
+}
