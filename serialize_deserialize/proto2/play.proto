@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package api;
+
+service PlaySvc {
+    rpc Play(PlayReq2) returns (PlayRes){}
+    rpc Stop2(StopReq) returns (StopRes){}
+}
+
+message PlayReq2 {
+    string A = 1;
+    string Cat = 2;
+    int64  Nums = 3;
+}
+
+message PlayRes {
+    int64 Code = 1;
+}
+
+
+message StopReq {
+    int64 Id = 1;
+}
+
+message StopRes {
+    string Status = 1;
+}
