@@ -12,6 +12,40 @@ what will happen if proto files mismatch?
 - rpc request parameter name
 - rpc request parameter type
 
+./proto/play.proto
+```protobuf
+...
+
+service PlaySvc {
+    rpc Play(PlayReq) returns (PlayRes){}
+    rpc Stop(StopReq) returns (StopRes){}
+}
+
+message PlayReq {
+    string Address = 1;
+    int64 Nums = 2;
+}
+
+...
+```
+
+./proto2/play.proto
+```protobuf
+...
+
+service PlaySvc {
+    rpc Play(PlayReq2) returns (PlayRes){}
+    rpc Stop2(StopReq) returns (StopRes){}
+}
+
+message PlayReq2 {
+    string A = 1;
+    string Cat = 2;
+    int64  Nums = 3;
+}
+
+...
+```
 
 ## Demo
 
