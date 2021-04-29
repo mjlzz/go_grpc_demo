@@ -2,6 +2,8 @@
 
 protobuf is just a serialization/deserialization tool (just like JSON)
 
+[Protobuf语法](https://segmentfault.com/a/1190000007917576)
+
 
 ## Question
 
