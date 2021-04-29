@@ -32,13 +32,15 @@ type Codec interface {
 
 ## Demo
 
-Define customized codec function based on [Codec interface](https://github.com/grpc/grpc-go/blob/v1.37.0/encoding/encoding.go#L86)
+- Define customized codec function based on [Codec interface](https://github.com/grpc/grpc-go/blob/v1.37.0/encoding/encoding.go#L86)
     - [encoding/json](https://pkg.go.dev/encoding/json)
 
 1. start server
 ```bash
+go run ./greeter_server/main.go
 ```
 
 2. send request
 ```bash
+go run ./greeter_client/main.go
 ```
