@@ -2,16 +2,19 @@
 
 ## Docs
 
-[grpc doc](https://pkg.go.dev/google.golang.org/grpc)
+- [grpc doc](https://pkg.go.dev/google.golang.org/grpc)
 
-[grpc health doc](https://pkg.go.dev/google.golang.org/grpc@v1.37.0/health)
+- [grpc health doc](https://pkg.go.dev/google.golang.org/grpc@v1.37.0/health)
 
-[health source code](https://sourcegraph.com/github.com/grpc/grpc-go/-/tree/health)
+- [health source code](https://sourcegraph.com/github.com/grpc/grpc-go/-/tree/health)
 
-[tutorial](https://github.com/grpc-ecosystem/grpc-health-probe)
+- [tutorial](https://github.com/grpc-ecosystem/grpc-health-probe)
 
-[grpc health-checking protocol](https://github.com/grpc/grpc/blob/master/doc/health-checking.md)
+- [grpc health-checking protocol](https://github.com/grpc/grpc/blob/master/doc/health-checking.md)
 
+## Example
+
+- [gRPC health checking on Kubernetes](https://github.com/grpc-ecosystem/grpc-health-probe#example-grpc-health-checking-on-kubernetes)
 
 ## Demo
 0. init project
