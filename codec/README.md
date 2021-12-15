@@ -2,8 +2,10 @@
 
 ## Docs
 
+
+
 - [grpc encoding](https://github.com/grpc/grpc-go/blob/v1.37.0/Documentation/encoding.md)
-> The gRPC API for sending and receiving is based upon `messages`. However, messages cannot be transmitted directly over a network; they must first be converted into `bytes`. This document describes how gRPC-Go converts messages into bytes and vice-versa for the purposes of network transmission.
+	> The gRPC API for sending and receiving is based upon `messages`. However, messages cannot be transmitted directly over a network; they must first be converted into `bytes`. This document describes how gRPC-Go converts messages into bytes and vice-versa for the purposes of network transmission.
     - [encoding api doc](https://pkg.go.dev/google.golang.org/grpc/encoding)
     - [encoding code](https://github.com/grpc/grpc-go/tree/v1.37.0/encoding)
 
@@ -25,7 +27,7 @@ type Codec interface {
 }
 ```
 
-- protobuf codec
+- protobuf codec (one way to codec)
     - [proto api doc](https://pkg.go.dev/google.golang.org/grpc/encoding/proto)
     - [proto code](https://github.com/grpc/grpc-go/tree/v1.37.0/encoding/proto)
 
@@ -33,7 +35,7 @@ type Codec interface {
 ## Demo
 
 - Define customized codec function based on [Codec interface](https://github.com/grpc/grpc-go/blob/v1.37.0/encoding/encoding.go#L86)
-    - [encoding/json](https://pkg.go.dev/encoding/json)
+	- [encoding/json](https://pkg.go.dev/encoding/json)
 
 1. start server
 ```bash
