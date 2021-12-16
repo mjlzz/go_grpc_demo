@@ -1,8 +1,16 @@
 # grpc_demo
 different grpc usages
 
-0. init project
+## Docs
+- [Go Quick start](https://grpc.io/docs/languages/go/quickstart/)
 
-- [update go proxy](https://goproxy.io/zh/)
+## Prepare
+- init project
 
-- [download all the dependencies](https://golangbyexample.com/go-mod-tidy/)
+  - [update go proxy](https://goproxy.io/zh/)
+
+  - [download all the dependencies](https://golangbyexample.com/go-mod-tidy/)
+
+- compile proto
+
+  - [compile cmd](go_kit/pb/compile.sh)
