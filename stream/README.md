@@ -16,3 +16,18 @@
 - bi-side rpc streaming （类似于tcp）场景：
   - 聊天机器人
   - 有状态的游戏服务器进行数据交换。比如LOL，王者荣耀等竞技游戏，client和server之间需要非常频繁地交换数据
+
+## Demo
+
+1. start server
+
+```bash
+go run server/main.go
+```
+
+
+2. send request (in another terminal)
+
+```bash
+go run client/main.go
+```
