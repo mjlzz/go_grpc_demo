@@ -1,11 +1,11 @@
-# grpc_demo
-different grpc usages
+# go grpc demo
+Different grpc usages implemented by golang
 
 ## Docs
 - [Go Quick start](https://grpc.io/docs/languages/go/quickstart/)
 - [gRPC-Go API](https://pkg.go.dev/google.golang.org/grpc)
 
-## Prepare
+## Before running demo
 - init project
 
   - [update go proxy](https://goproxy.io/zh/)
