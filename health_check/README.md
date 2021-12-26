@@ -1,4 +1,5 @@
-# grpc_health_check
+# grpc health check
+monitor connetion status by strobing server
 
 ## Docs
 

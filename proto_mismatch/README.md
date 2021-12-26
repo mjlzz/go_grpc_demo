@@ -1,9 +1,4 @@
-# protobuf
-
-protobuf is just a serialization/deserialization tool (just like JSON)
-
-[Protobuf语法](https://segmentfault.com/a/1190000007917576)
-
+# mismatch proto files
 
 ## Question
 
@@ -69,7 +64,7 @@ go run server/server.go
 go run client/client.go
 ```
 
-## Mismatch
+## Mismatch explain
 
 ```bash
      --------                        ---------
@@ -87,3 +82,9 @@ go run client/client.go
 - receiver decode protobuf bytes to struct
     - decode by order and type
     - if types mismatch in the same order, save bytes into `unknownFields` and set corresponding attribute default value
+
+### protobuf
+
+protobuf is just a serialization/deserialization tool (just like JSON)
+
+[Protobuf语法](https://segmentfault.com/a/1190000007917576)

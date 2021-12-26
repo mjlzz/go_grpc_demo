@@ -1,7 +1,8 @@
 # grpc codec
+play grpc wiht cumstomized codec
+
 
 ## Docs
-
 
 
 - [grpc encoding](https://github.com/grpc/grpc-go/blob/v1.37.0/Documentation/encoding.md)

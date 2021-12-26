@@ -1,8 +1,8 @@
-# Stream
+# grpc stream
+one unary usage and three different stream usages
 
 
-
-## Case
+## Scenarios
 > 参考 [文档1](https://cloud.tencent.com/developer/article/1445070), [文档2](https://zhuanlan.zhihu.com/p/141677241)
 
 - service-side rpc streaming 场景：
