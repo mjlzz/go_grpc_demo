@@ -71,8 +71,19 @@ go run client/client.go
 
 ## Mismatch
 
-sender encode reqeust/respose struct to protobuf bytes, dismiss attribute's name, send attribute with order number and type
+```bash
+     --------                        ---------
+    |        |                      |         |
+    | sender |  ----> [bytes] ----> | receiver|
+    |        |                      |         |
+     --------                        ---------
+```
 
-transport bytes
+- sender encode reqeust/response struct to protobuf bytes
+    - protobuf dismiss attribute's name, encode with order number and type
 
-receiver decode protobuf bytes by order and type, if types mismatch in the same order, save bytes into `unknownFields` and set corresponding attribute default value
+- transport bytes
+
+- receiver decode protobuf bytes to struct
+    - decode by order and type
+    - if types mismatch in the same order, save bytes into `unknownFields` and set corresponding attribute default value
