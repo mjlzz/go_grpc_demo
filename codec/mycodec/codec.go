@@ -8,6 +8,7 @@ import (
 
 const Name = "mycodec"
 
+// register codec after import this module
 func init() {
 	encoding.RegisterCodec(demoCodec{})
 }
