@@ -11,7 +11,7 @@ play grpc wiht cumstomized codec
     - [encoding api doc](https://pkg.go.dev/google.golang.org/grpc/encoding)
     - [encoding code](https://github.com/grpc/grpc-go/tree/v1.37.0/encoding) define two interface: `Compressor`, `Codec`
 
-When [prepare msg](https://github.com/grpc/grpc-go/blob/v1.37.0/stream.go#L1578), there are two encoding steps:
+When [prepare msg](https://github.com/grpc/grpc-go/blob/v1.37.0/stream.go#L1578), there are two processing steps:
       1. [encode](https://github.com/grpc/grpc-go/blob/v1.37.x/rpc_util.go#L588)
       2. [compress](https://github.com/grpc/grpc-go/blob/v1.37.x/rpc_util.go#L606)
   	. If not set compress type, `msgHeader` will use raw data.
