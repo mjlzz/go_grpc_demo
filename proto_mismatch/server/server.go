@@ -21,8 +21,8 @@ type server struct {
 }
 
 func (s *server) Play(ctx context.Context, in *pb.PlayReq) (*pb.PlayRes, error) {
-	log.Print("Received play: ", in.GetNums(), " ", in.GetAddress(), " ", in.GetCount())
-	log.Print("Received play: ", in)
+	log.Print("Received raw req: ", in)
+	log.Print("req.GetXXX(): Nums:", in.GetNums(), " Address:", in.GetAddress(), " Count:", in.GetCount())
 	return &pb.PlayRes{Code: 200}, nil
 }
 
