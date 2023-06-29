@@ -32,3 +32,4 @@ When [prepare msg](https://github.com/grpc/grpc-go/blob/v1.37.0/stream.go#L1578)
 
 - [compression Readme](https://github.com/grpc/grpc-go/blob/v1.37.0/Documentation/compression.md)
 - [official docs compression](https://grpc.io/docs/guides/compression/)
+- [official demo](https://github.com/grpc/grpc-go/tree/v1.37.0/examples/features/compression)
